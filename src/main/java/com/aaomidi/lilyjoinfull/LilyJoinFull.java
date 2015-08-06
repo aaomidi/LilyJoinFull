@@ -15,7 +15,7 @@ public class LilyJoinFull extends JavaPlugin implements Listener {
         this.getServer().getPluginManager().registerEvents(this, this);
     }
 
-    @EventHandler(priority = EventPriority.NORMAL)
+    @EventHandler(priority = EventPriority.LOW)
     public void onLogin(PlayerLoginEvent event) {
         if (event.getResult() != PlayerLoginEvent.Result.KICK_FULL) return;
 
